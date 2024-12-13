@@ -1,0 +1,47 @@
+.form {
+    width: 450px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.date-input, .steps-input {
+    height: 44px;
+    width: 30%;
+    padding: 0 0 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin: 0;
+}
+
+.date-input {
+    margin-right: 20px;
+}
+
+.btn-submit { 
+    width: 15%;
+    height: 44px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: aliceblue;
+}
+
+.list-headers {
+    display: flex;
+    justify-content: space-between;;
+}
+
+
+.input-titles {
+    display: flex;
+}
+
+.title {
+    margin: 0 90px 20px 0;
+}

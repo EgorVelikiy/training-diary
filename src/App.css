@@ -1,0 +1,7 @@
+.App {
+  display: flex;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

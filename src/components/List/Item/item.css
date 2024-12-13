@@ -1,0 +1,15 @@
+li {
+    display: flex;
+    justify-content: space-between;;
+    margin-bottom: 30px;
+}
+  
+li:last-child {
+    margin-bottom: 0;
+}
+
+.delete {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
