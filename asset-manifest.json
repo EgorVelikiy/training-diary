@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/training-diary/static/css/main.fe478922.css",
-    "main.js": "/training-diary/static/js/main.e8c4fe4d.js",
+    "main.js": "/training-diary/static/js/main.d5761fa5.js",
     "static/js/151.7977eb99.chunk.js": "/training-diary/static/js/151.7977eb99.chunk.js",
     "index.html": "/training-diary/index.html",
     "main.fe478922.css.map": "/training-diary/static/css/main.fe478922.css.map",
-    "main.e8c4fe4d.js.map": "/training-diary/static/js/main.e8c4fe4d.js.map",
+    "main.d5761fa5.js.map": "/training-diary/static/js/main.d5761fa5.js.map",
     "151.7977eb99.chunk.js.map": "/training-diary/static/js/151.7977eb99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe478922.css",
-    "static/js/main.e8c4fe4d.js"
+    "static/js/main.d5761fa5.js"
   ]
 }
