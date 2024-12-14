@@ -4,11 +4,9 @@ import validation from './Validation/Validation.js'
 import timeCompare from './Validation/timeCompare.js'
 import './form.css'
 
-export default function Form() {
+export default function Form({mainList}) {
     const [form, setForm] = useState({ date: '', steps: '' })
-    const [list, setList] = useState([])
-
-
+    const [list, setList] = useState(mainList)
 
     const onSubmitForm = (e) => {
         e.preventDefault();
@@ -29,12 +27,21 @@ export default function Form() {
         }
 
         const index = list.findIndex((item) => timeCompare(item.date) <= timeCompare(valid_values.date))
+        if (index !== -1 && timeCompare(list[index].date) === timeCompare(valid_values.date)) {
 
-        if (index !== -1) {
-            newList = list.concat([valid_values])
-            newList = newList.sort((a, b) => timeCompare(a) - timeCompare(b))
+            try {
+                valid_values.steps = Number(list[index].steps) + Number(valid_values.steps)
+                valid_values = validation(valid_values)
+            } catch(e) {
+                alert(e.message)
+                return
+            }
+
+            list[index].steps = valid_values.steps
+            newList = list;
         } else {
             newList = list.concat([valid_values])
+            newList = newList.sort((a, b) => timeCompare(b.date) - timeCompare(a.date))
         }
 
         setForm({ date: '', steps: '' })
